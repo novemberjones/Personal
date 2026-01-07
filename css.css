@@ -1,0 +1,77 @@
+@charset "UTF-8";
+/* CSS Document */
+@font-face {font-family:"Foremost";
+src:url("Foremost Italic.ttf") format("woff2");
+font-style:italic}
+
+@font-face {font-family:"Foremost";
+src:url("Foremost Regular.ttf") format("woff2");
+font-style:normal}
+
+body{
+background:url("imgs/no.png");
+overflow-y: hidden;
+background-repeat: no-repeat;
+background-position:center;}
+
+#CM{
+color:white;
+position: absolute;  
+top: 50%;
+left: 53%;
+transform: translate(-50%, -50%);
+font-size:20px;
+text-decoration:none;}
+
+#CM:hover{color:#ffae00;}
+
+#GB{margin-top:3%;
+margin-bottom:2%;
+margin-left:7%;
+font-family:Foremost;
+color:#ffae00;
+font-size:130px;
+text-align: center;}
+
+#MN{
+color:#ffae00; 
+text-align:right;
+margin-right:5%;
+margin-bottom:5%;
+font-size:20px;
+display:block;
+text-decoration: none;
+}
+
+#MN:hover{color:white;}
+
+#WRAPPER{position: relative;}
+
+#CD {
+animation: spin 8s linear infinite;
+width: fit-content;
+margin-left:34%;
+margin-top:0%;
+}
+
+#CD img {
+ width: 550px;   
+height: auto;
+	
+}
+#CD:hover {
+  animation-play-state: paused;
+}
+
+@keyframes spin {
+from { transform: rotate(0deg); }
+to   { transform: rotate(360deg); }}
+
+#idk {background:beige;padding:500px;}
+
+#text{text-align: center; 
+	margin-top:30%;}
+#empty{}
+
+
+

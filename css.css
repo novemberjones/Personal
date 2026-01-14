@@ -8,11 +8,15 @@ font-style:italic}
 src:url("Foremost Regular.ttf") format("woff2");
 font-style:normal}
 
-body{
-background:url("imgs/no.png");
+html, body{margin: 0; height:100%; overflow-y: hidden;}
+
+#homepage{
 overflow-y: hidden;
+background:url("imgs/no.png");
 background-repeat: no-repeat;
 background-position:center;}
+
+
 
 #CM{
 color:white;
@@ -71,60 +75,86 @@ height: auto;
 from { transform: rotate(0deg); }
 to   { transform: rotate(360deg); }}
 
-#idk {background:beige;padding:500px;}
-
-#text{text-align: center; 
-	margin-top:30%;}
-#empty{}
-
-
-/* mobile section */
-
-
-@media only screen and (max-width: 768px)
-{
-	
-body{
-background:url("imgs/no.jpg");
-background-repeat: no-repeat;
-min-height: 100vh; 
-margin:0;
+#corkboard {
+background:url("imgs/brown2.png");
 background-size:cover;
-background-position:50% 50%;}
+background-repeat: no-repeat;
+z-index: 0;
+height:100%;
+width:100%}
 
-#GB{
-font-family:"Foremost";
-font-size:90px;
-text-align: center;
-background:url("imgs/gold1.png");
--webkit-background-clip: text;
-background-clip: text;
-color: transparent;
-background-size:80%;
-margin-top:15%;}
-	
-#CD img {
- width: 400px;   
-height: auto;}
-	
-#CM{
-color:white;
-position: absolute;  
-transform: translate(-50%, -50%);
-font-size:15px;
+
+#flower{
+background:url("imgs/page.png");
+width:1100px;
+height:740px;
+margin: 0px auto 0;
+padding-top:6%;
+background-repeat: no-repeat;
+background-position: center;
+background-size:120%;
+position:relative;
+z-index: 3;
+
+
+}
+
+#corner{
+background:url("imgs/corner.png");
+background-repeat:no-repeat;
+background-position:top;}
+
+#indexcard{
+background-size:contain;
+background-position:center;
+background-repeat: no-repeat;
+text-align:center;
+padding-top:80px;
+width: 100%;
+height: 500px;
+
+} 
+
+#text{
+text-align:left;
+max-width: 450px;
+margin-left:120px;
+font-family:"Fraunces";
+font-weight:200;
+font-size:20px;
+color:#360000;
+padding:0px;
+line-height: 1.3}
+
+h1{font-family:"Fraunces";
+font-style:italic;
+font-weight:400;
+font-size:50px;}
+
+#cam{
+height:auto; 
+width:15%;
+transform: translate(-290px,-400px) rotate(-20deg)}
+
+span{color:darkgoldenrod; font-weight:400; }
+
+#moon{
+height:auto; 
+width:15%;
+transform: translate(110px, 100px), ;}
+
+.links{
+font-family:"Homemade Apple";
 text-decoration:none;
-top: 50%;
-left: 53%;}
-
-#CD {
-margin-left:25%;
-margin-top:0%;
+position:absolute;
+bottom:3px;
+color:#3C1900;
+font-size:20px;
 }
 
+.links:hover
+{color:#ffae00}
 
+#CTC{right:15px;}
 
-
-}
-
-
-
+#BTCD {left:15px}

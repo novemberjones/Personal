@@ -16,8 +16,6 @@ background:url("imgs/no.png");
 background-repeat: no-repeat;
 background-position:center;}
 
-
-
 #CM{
 color:white;
 position: absolute;  
@@ -40,6 +38,8 @@ background:url("imgs/gold1.png");
 background-clip: text;
 color: transparent;
 background-size:80%}
+
+.mobile{display:none}
 
 #MN{
 color:#ffae00; 
@@ -86,8 +86,9 @@ width:100%}
 
 #flower{
 background:url("imgs/page.png");
-width:1100px;
-height:740px;
+width:min(1100px, 92vw);
+height:auto;
+aspect-ratio: 1100/740;
 margin: 0px auto 0;
 padding-top:6%;
 background-repeat: no-repeat;
@@ -95,15 +96,7 @@ background-position: center;
 background-size:120%;
 position:relative;
 z-index: 3;
-
-
 }
-
-#corner{
-background:url("imgs/corner.png");
-background-repeat:no-repeat;
-background-position:top;}
-
 #indexcard{
 background-size:contain;
 background-position:center;
@@ -112,11 +105,12 @@ text-align:center;
 padding-top:80px;
 width: 100%;
 height: 500px;
-
 } 
 
 #text{
 text-align:left;
+width: min(520px, 80%);
+margin:0 auto;
 max-width: 450px;
 margin-left:120px;
 font-family:"Fraunces";
@@ -131,17 +125,8 @@ font-style:italic;
 font-weight:400;
 font-size:50px;}
 
-#cam{
-height:auto; 
-width:15%;
-transform: translate(-290px,-400px) rotate(-20deg)}
-
 span{color:darkgoldenrod; font-weight:400; }
 
-#moon{
-height:auto; 
-width:15%;
-transform: translate(110px, 100px), ;}
 
 .links{
 font-family:"Homemade Apple";
@@ -158,3 +143,69 @@ font-size:20px;
 #CTC{right:15px;}
 
 #BTCD {left:15px}
+
+	@media only screen and (max-width: 430px){
+	
+	html, body{overflow: hidden;}	
+	
+	h1 {font-size:18px;}
+	
+	#text{
+	font-size:7px;
+	margin-left:30px;
+	margin-top:120px;
+	max-width:160px;
+	}
+	
+	#flower{
+	background-size:128%;
+	}
+	
+	.links {
+	bottom:255px;
+	font-size:10px;}
+		
+	
+		
+	#CTC{right:30px;}
+
+	#BTCD {left:30px}
+	
+
+		
+	#swirl{
+	background:url("imgs/no.jpg");
+	width:100vw;
+	height:100vh;
+	background-size:120%;
+	background-repeat:no-repeat;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index: -1;}
+
+		
+	#GB{
+	font-size:70px;
+		}
+	
+	#CD img{
+	width:290px;
+
+		}
+	
+	#homebody{margin-top:30%;}
+		
+	.mobile {display:inline}
+	
+	#CM{
+	font-size:12px;
+	left:52%; 
+	font-family:"Times New Roman";
+	font-weight:500;}
+	
+	#CD{margin-left:15%;}
+	
+	#MN{font-size:15px; 
+		margin-top:25%;}
+}

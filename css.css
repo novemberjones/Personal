@@ -14,7 +14,11 @@ html, body{margin: 0; height:100%; overflow-y: hidden;}
 overflow-y: hidden;
 background:url("imgs/no.png");
 background-repeat: no-repeat;
-background-position:center;}
+background-position:center;
+position:relative;
+min-height: 100vh;
+overflow: hidden;
+}
 
 #CM{
 color:white;
@@ -154,8 +158,7 @@ font-size:20px;
 	font-size:7px;
 	margin-left:30px;
 	margin-top:120px;
-	max-width:160px;
-	}
+	max-width:160px;	}
 	
 	#flower{
 	background-size:128%;
@@ -163,9 +166,10 @@ font-size:20px;
 	
 	.links {
 	bottom:255px;
-	font-size:10px;}
-		
-	
+	font-size:10px;
+	position:fixed;
+	z-index:9999;}
+
 		
 	#CTC{right:30px;}
 
@@ -173,16 +177,15 @@ font-size:20px;
 	
 
 		
-	#swirl{
+	/*#swirl{
 	background:url("imgs/no.jpg");
 	width:100vw;
 	height:100vh;
 	background-size:120%;
 	background-repeat:no-repeat;
-	position:absolute;
-	top:0;
-	left:0;
-	z-index: -1;}
+	position:fixed;
+	inset:0;
+	z-index: 0;} */
 
 		
 	#GB{
@@ -194,7 +197,7 @@ font-size:20px;
 
 		}
 	
-	#homebody{margin-top:30%;}
+	#homebody{margin-top:30%;position:relative; z-index: 1;}
 		
 	.mobile {display:inline}
 	
@@ -208,4 +211,8 @@ font-size:20px;
 	
 	#MN{font-size:15px; 
 		margin-top:25%;}
+		
+		
+		
+	
 }

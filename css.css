@@ -249,7 +249,25 @@ line-height: 1.4;
 	
 }
 
-#title{
+#text3{
+text-align:left;
+width: min(600px, 100%);
+margin:0 auto;
+margin-right:120px;
+margin-top:0px;
+position:absolute;
+left:800px;
+top:80px;	
+font-family:"Indie Flower";
+font-weight:200;
+font-size:18px;
+color:#360000;
+padding:0px;
+line-height: 1.4;	
+
+}
+
+.title{
 font-family:"Homemade Apple";
 font-size:40px;
 	
@@ -270,6 +288,81 @@ font-size:18px;
 color:#704234;}
 	#previous:hover
 	{color:#bf7c7c}
+
+
+#page2{
+/*background:url("imgs/background1.png"); 
+background:url("imgs/backgroundtest.png"); */
+background:url("imgs/backgroundtest.png"); 
+background-repeat:no-repeat;
+background-size:100%;
+height:100vh;
+position:relative;}
+
+#yt{
+position:absolute;
+height:auto;
+width:280px;
+top:60px;
+left:500px;
+}
+
+#just{
+position:absolute;
+height:auto;
+width:300px;
+top:320px;
+left:50px;
+}
+
+#purple{
+position:absolute;
+height:auto;
+width:530px;
+top:36px;
+left:30px;
+}
+
+#enlightened{
+position:absolute;
+height:auto;
+width:390px;
+top:60px;
+left:50px;
+}
+
+#simp{
+position:absolute;
+height:auto;
+width:390px;
+left:360px;
+top:230px;
+}
+
+#babies{
+position:absolute;
+height:auto;
+width:480px;
+left:300px;
+bottom:30px;
+}
+
+#conspirator{
+position:absolute;
+height:auto;
+width:270px;
+left:150px;
+bottom:290px;
+}
+
+#thanks{
+position:absolute;
+height:auto;
+width:340px;
+left:45px;
+bottom:58px;
+}
+
 
 
 	@media only screen and (max-width: 430px){
